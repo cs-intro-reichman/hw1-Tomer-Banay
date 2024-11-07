@@ -7,9 +7,9 @@ public class FVCalc {
 		int t = Integer.parseInt (args[2]);
 
 		// equation of Future Value
-		double fv = cv * (Math.pow ((1 + r/100), t));
+		double fv = cv * (Math.pow (1 + (r/100), t));
 
 		System.out.println("After " + t + " years, $" + cv + " saved at " 
-		+ (double)(r) + "% will yield $" + (int)(fv));
+		+ r + "% will yield $" + (int)(fv));
 	}
 }
