@@ -10,6 +10,6 @@ public class FVCalc {
 		double fv = cv * (Math.pow ((1 + r/100), t));
 
 		System.out.println("After " + t + " years, $" + cv + " saved at " 
-		+ r + "% will yield $" + ((int) fv));
+		+ (double)(r) + "% will yield $" + (int)(fv));
 	}
 }
