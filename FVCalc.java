@@ -2,14 +2,14 @@
 public class FVCalc {
 	public static void main(String[] args){
 		// classify the args
-		double pv = Double.parseDouble (args[0]);
+		int cv = Integer.parseInt (args[0]);
 		double r = Double.parseDouble (args[1]);
 		int t = Integer.parseInt (args[2]);
 
 		// equation of Future Value
-		double fv = (pv * Math.pow ((1 + r/100), t));
+		double fv = cv * (Math.pow ((1 + r/100), t));
 
-		System.out.print("After " + args [2] + " years, $" + args [0] + " saved at " 
+		System.out.println("After " + t + " years, $" + cv + " saved at " 
 		+ r + "% will yield $" + ((int) fv));
 	}
 }
