@@ -8,13 +8,17 @@ public class TimeFormat {
 		String formattedMinutes = minutes < 10 ? "0" + minutes : "" + minutes;
 
 		// AM / PM
-		 if (hours > 12 )  {
+		 if ( hours > 12 )  {
 			hours = hours - 12;
-			System.out.println(hours + ":" + formattedMinutes + " PM");}
+			System.out.println ( hours + ":" + formattedMinutes + " PM" );
+		}
 		else {
-			if (hours < 12)
-			System.out.print(hours + ":" + formattedMinutes + " AM");
-			else {
-				System.out.println("12" + ":" + formattedMinutes + " PM");}}
+		if (hours < 12)
+			System.out.print ( hours + ":" + formattedMinutes + " AM" );
+		else {
+			System.out.println ( "12" + ":" + formattedMinutes + " PM" );
+				}
+			}
 		}
 	}	
+
